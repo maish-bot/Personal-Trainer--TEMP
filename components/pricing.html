@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal trainer section</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind config for gold color -->
+      <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+               neon: '#39ff14'
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Apply premium fonts */
+      h1, h2 {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+      }
+      body, p, a, button {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+
+</head>
+
+<section class="py-20 bg-[#1a1a1a] text-white">
+
+ <body class="bg-[#1a1a1a] text-white min-h-screen">
+
+<!-- Nav Bar -->
+<nav class="absolute top-0 left-0 w-full z-20">
+  <div class="w-full mx-auto px-16 py-5 flex items-center justify-between ">
+    <h1 class="text-3xl font-bold tracking-wide text-white">TRAINER<span class="text-neon">PRO</span></h1>
+<ul class="hidden md:flex space-x-8 text-2xl font-medium">
+      <li><a href="index.html" class="hover:text-neon transition">Home</a></li>
+      <li><a href="services.html" class="hover:text-neon transition">Services</a></li>
+      <li><a href="gallery.html" class="hover:text-neon transition">Gallery</a></li>
+      <li><a href="pricing.html" class="hover:text-neon transition">Pricing</a></li>
+      <li><a href="contact.html" class="hover:text-neon transition">Contact</a></li>
+    </ul>
+    <button class="md:hidden text-white text-3xl">&#9776;</button>
+  </div>
+</nav>
+
+<!-- Pricing section -->
+<section class="py-20 bg-[#1a1a1a] text-white">
+
+
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    
+    <h2 class="text-4xl font-extrabold mb-4">Training Packages</h2>
+    <p class="text-gray-400 max-w-xl mx-auto mb-16 text-sm md:text-base">
+      Choose the coaching plan that fits your fitness goals and lifestyle.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!-- Basic Coaching -->
+      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col justify-between text-center min-h-[360px] border border-gray-800/50">
+        <div>
+          <h3 class="text-xl font-bold text-gray-300 tracking-wide uppercase mb-4">Starter Coaching</h3>
+          <div class="flex items-baseline justify-center gap-1 mb-4">
+            <span class="text-5xl font-extrabold text-white">£40</span>
+            <span class="text-gray-500 text-sm">/session</span>
+          </div>
+          <p class="text-gray-400 leading-relaxed text-sm max-w-[220px] mx-auto">
+            Perfect for beginners. One personalised training session tailored to your goals.
+          </p>
+        </div>
+        
+        <div class="mt-8">
+          <button class="w-full py-3 px-6 rounded-lg font-semibold bg-gray-800 text-white hover:bg-gray-700 transition border border-gray-700">
+            Select Plan
+          </button>
+        </div>
+      </div>
+
+      <!-- Most Popular -->
+      <div class="bg-gray-900 p-10 rounded-xl shadow-2xl hover:scale-105 transition duration-300 ease-out flex flex-col justify-between text-center min-h-[360px] border-2 border-neon relative">
+        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-neon text-black font-bold uppercase tracking-widest text-xs px-3 py-1 rounded-full shadow-md">
+          Most Popular
+        </span>
+
+        <div>
+          <h3 class="text-xl font-bold text-neon tracking-wide uppercase mb-4">Transformation Plan</h3>
+          <div class="flex items-baseline justify-center gap-1 mb-4">
+            <span class="text-5xl font-extrabold text-white drop-shadow-[0_0_15px_#39ff14]">£120</span>
+            <span class="text-gray-500 text-sm">/week</span>
+          </div>
+          <p class="text-gray-400 leading-relaxed text-sm max-w-[220px] mx-auto">
+            Includes 3 weekly sessions, meal planning, progress tracking, and full support.
+          </p>
+        </div>
+        
+        <div class="mt-8">
+          <button class="w-full py-3 px-6 rounded-lg font-semibold bg-neon text-black hover:bg-[#5fff3a] transition shadow-lg shadow-neon/20">
+            Start Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Premium Package -->
+      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col justify-between text-center min-h-[360px] border border-gray-800/50">
+        <div>
+          <h3 class="text-xl font-bold text-gray-300 tracking-wide uppercase mb-4">Elite Coaching</h3>
+          <div class="flex items-baseline justify-center gap-1 mb-4">
+            <span class="text-5xl font-extrabold text-white">£220</span>
+            <span class="text-gray-500 text-sm">/week</span>
+          </div>
+          <p class="text-gray-400 leading-relaxed text-sm max-w-[220px] mx-auto">
+            Unlimited messaging, 5 weekly sessions, custom meal plan, and full accountability.
+          </p>
+        </div>
+        
+        <div class="mt-8">
+          <button class="w-full py-3 px-6 rounded-lg font-semibold bg-gray-800 text-white hover:bg-gray-700 transition border border-gray-700">
+            Select Plan
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal trainer section</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind config for gold color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+               neon: '#39ff14'
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Apply premium fonts */
+      h1, h2 {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+      }
+      body, p, a, button {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+
+</head>
+
+<body class="py-20 bg-[#1a1a1a] text-white">
+
+<!-- Nav Bar -->
+<nav class="absolute top-0 left-0 w-full z-20">
+  <div class="w-full mx-auto px-16 py-5 flex items-center justify-between ">
+    <h1 class="text-3xl font-bold tracking-wide text-white">TRAINER<span class="text-neon">PRO</span></h1>
+<ul class="hidden md:flex space-x-8 text-2xl font-medium">
+      <li><a href="index.html" class="hover:text-neon transition">Home</a></li>
+      <li><a href="services.html" class="hover:text-neon transition">Services</a></li>
+      <li><a href="gallery.html" class="hover:text-neon transition">Gallery</a></li>
+      <li><a href="pricing.html" class="hover:text-neon transition">Pricing</a></li>
+      <li><a href="contact.html" class="hover:text-neon transition">Contact</a></li>
+    </ul>
+    <button class="md:hidden text-white text-3xl">&#9776;</button>
+  </div>
+</nav>
+<!-- Gallery Section -->
+<section class="py-20 bg-[#1a1a1a] text-white">
+
+
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-extrabold mb-12">Gallery</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 bordercolor-white">
+
+      <!-- Image 1 -->
+      <div class="overflow-hidden rounded-xl">
+        <img src="Healthy Meal Prep Ideas for Weight Loss _ High Protein Chicken & Quinoa.jpg" class="w-full h-64 object-cover rounded-xl border-4 border-neon
+ hover:scale-110 transition duration-300">
+      </div>
+
+      <!-- Image 2 -->
+      <div class="overflow-hidden rounded-xl">
+        <img src="download (20).jpg" class="w-full h-64 object-cover rounded-xl border-4 border-neon
+ hover:scale-110 transition duration-300">
+      </div>
+
+      <!-- Image 3 -->
+      <div class="overflow-hidden rounded-xl">
+        <img src="download (17).jpg" class="w-full h-64 object-cover rounded-xl border-4 border-neon
+hover:scale-110 transition duration-300">
+      </div>
+
+      <!-- Image 4 -->
+      <div class="overflow-hidden rounded-xl">
+        <img src="download (19).jpg" class="w-full h-64 object-cover rounded-xl border-4 border-neon
+hover:scale-110 transition duration-300">
+      </div>
+
+      <!-- Image 5 -->
+      <div class="overflow-hidden rounded-xl">
+        <img src="BUILD YOUR HIGH PROTEIN MEALS (WEIGHT LOSS).jpg" class="w-full h-64 object-cover rounded-xl border-4 border-neon
+hover:scale-110 transition duration-300">
+      </div>
+
+      <!-- Image 6 -->
+      <div class="overflow-hidden rounded-xl">
+        <img src="81627811992540428.jpg" class="w-full h-64 object-cover rounded-xl border-4 border-neon
+ hover:scale-110 transition duration-300">
+      </div>
+
+    </div>
+  </div>
+</section>
+</body>
+</html>

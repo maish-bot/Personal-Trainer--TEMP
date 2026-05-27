@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal trainer section</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!-- Google Fonts for premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind config for gold color -->
+     <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+               neon: '#39ff14'
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Apply premium fonts */
+      h1, h2 {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+      }
+      body, p, a, button {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+
+</head>
+
+<body class="py-20 bg-[#1a1a1a] text-white">
+
+
+
+<nav class="absolute top-0 left-0 w-full z-20">
+  <div class="w-full mx-auto px-16 py-5 flex items-center justify-between ">
+    <h1 class="text-3xl font-bold tracking-wide text-white">TRAINER<span class="text-neon">PRO</span></h1>
+<ul class="hidden md:flex space-x-8 text-2xl font-medium">
+      <li><a href="index.html" class="hover:text-neon transition">Home</a></li>
+      <li><a href="services.html" class="hover:text-neon transition">Services</a></li>
+      <li><a href="gallery.html" class="hover:text-neon transition">Gallery</a></li>
+      <li><a href="pricing.html" class="hover:text-neon transition">Pricing</a></li>
+      <li><a href="contact.html" class="hover:text-neon transition">Contact</a></li>
+    </ul>
+    <button class="md:hidden text-white text-3xl">&#9776;</button>
+  </div>
+</nav>
+
+<!-- Services Section -->
+<section class="py-20 bg-[#1a1a1a] text-white">
+
+  <div class="max-w-6xl mx-auto px-6 text-center">
+  
+    <h2 class="text-4xl font-extrabold mb-16">Our Services</h2>
+
+        <!-- Card 1: 1-to-1 Coaching -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px]">
+
+        <div class="flex-1 flex items-center justify-center">
+          <svg class="w-28 h-28 drop-shadow-[0_0_15px_#39ff14]" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="7" r="4"/>
+            <path d="M5.5 21a6.5 6.5 0 0 1 13 0"/>
+          </svg>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-1">1‑to‑1 Coaching</h3>
+        <p class="text-gray-400 leading-relaxed max-w-[200px]">Personalised training sessions designed for your goals.</p>
+      </div>
+
+       <!-- Card 2: Meal Plans -->
+      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px]">
+
+        <div class="flex-1 flex items-center justify-center">
+          <svg class="w-24 h-24 drop-shadow-[0_0_15px_#39ff14]" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 3h16v4H4z"/>
+            <path d="M4 7h16v4H4z"/>
+            <path d="M4 11h16v10H4z"/>
+            <circle cx="8" cy="15" r="2"/>
+          </svg>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-1">Meal Plans</h3>
+        <p class="text-gray-400 leading-relaxed max-w-[200px]">Custom nutrition plans to fuel your transformation.</p>
+      </div>
+      
+       <!-- Card 3: Online Coaching -->
+      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px]">
+
+        <div class="flex-1 flex items-center justify-center">
+          <svg class="w-24 h-24 drop-shadow-[0_0_15px_#39ff14]" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="14" rx="2"/>
+            <path d="M10 17l-2 3h8l-2-3"/>
+          </svg>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-1">Online Coaching</h3>
+        <p class="text-gray-400 leading-relaxed max-w-[200px]">Train anywhere with expert guidance and accountability.</p>
+      </div>
+       <!-- Card 4: Strength Training -->
+      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px] md:col-span-3">
+
+        <div class="flex-1 flex items-center justify-center">
+          <svg class="w-28 h-28 drop-shadow-[0_0_15px_#39ff14]" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="9" width="6" height="6" rx="1"/>
+            <rect x="17" y="9" width="6" height="6" rx="1"/>
+            <path d="M7 12h10"/>
+          </svg>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-1">Strength Training</h3>
+        <p class="text-gray-400 leading-relaxed max-w-[300px] mx-auto">Build muscle, increase power, and push your limits.</p>
+      </div>
+
+    </div>
+  
+</section>
+</body>
+</html>

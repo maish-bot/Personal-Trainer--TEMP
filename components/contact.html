@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal trainer Contact Page</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind config for gold color -->
+     <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+               neon: '#39ff14'
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Apply premium fonts */
+      h1, h2 {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+      }
+      body, p, a, button {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+
+</head>
+    
+<body class="py-20 bg-[#1a1a1a] text-white">
+
+<!-- Nav Bar -->
+
+ <nav class="absolute top-0 left-0 w-full z-20">
+  <div class="w-full mx-auto px-16 py-5 flex items-center justify-between ">
+    <h1 class="text-3xl font-bold tracking-wide text-white">Trainer<span class="text-neon">PRO</span></h1>
+<ul class="hidden md:flex space-x-8 text-2xl font-medium">
+      <li><a href="index.html" class="hover:text-neon transition">Home</a></li>
+      <li><a href="services.html" class="hover:text-neon transition">Services</a></li>
+      <li><a href="gallery.html" class="hover:text-neon transition">Gallery</a></li>
+      <li><a href="pricing.html" class="hover:text-neon transition">Pricing</a></li>
+      <li><a href="contact.html" class="hover:text-neon transition">Contact</a></li>
+    </ul>
+    <button class="md:hidden text-white text-3xl">&#9776;</button>
+  </div>
+</nav>
+
+<!-- Contact Section -->
+
+<section class="py-20 px-16 bg-[#1a1a1a] text-white">
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-4xl font-extrabold text-center mb-16">Contact Us</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-start">
+
+      <!-- LEFT SIDE: Contact Info -->
+      <div class="space-y-8">
+
+        <!-- Phone -->
+        <div>
+          <h3 class="text-2xl font-bold mb-2">Phone</h3>
+          <p class="text-gray-300 text-lg">0121 555 7890</p>
+        </div>
+
+        <!-- Address -->
+        <div>
+          <h3 class="text-2xl font-bold mb-2">Address</h3>
+          <p class="text-gray-300 text-lg">
+            123 Barber Street<br>
+            Oldbury, Birmingham<br>
+            B68 0XX
+          </p>
+        </div>
+
+        <!-- Opening Hours -->
+        <div>
+          <h3 class="text-2xl font-bold mb-2">Opening Hours</h3>
+          <p class="text-gray-300 text-lg">Mon–Fri: 9am – 7pm</p>
+          <p class="text-gray-300 text-lg">Saturday: 9am – 5pm</p>
+          <p class="text-gray-300 text-lg">Sunday: Closed</p>
+        </div>
+
+      </div>
+
+       <!-- RIGHT SIDE: Contact Form -->
+<form class="bg-gray-900 p-8 rounded-xl shadow-lg space-y-6">
+
+  <div>
+    <label class="block text-left font-semibold mb-2">Name</label>
+    <input type="text" 
+           class="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-neon" 
+           placeholder="Your Name">
+  </div>
+
+  <div>
+    <label class="block text-left font-semibold mb-2">Email</label>
+    <input type="email" 
+           class="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-neon" 
+           placeholder="Your Email">
+  </div>
+
+  <div>
+    <label class="block text-left font-semibold mb-2">Message</label>
+    <textarea 
+      class="w-full p-3 rounded-lg bg-gray-800 text-white h-32 focus:outline-none focus:ring-2 focus:ring-neon" 
+      placeholder="Your Message"></textarea>
+  </div>
+
+  <button class="w-full py-3 bg-neon text-black font-bold rounded-lg hover:bg-[#5fff3a] hover:shadow-[0_0_20px_#39ff14] transition">
+    Send Message
+  </button>
+
+</form>
+
+    </div>
+  </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Premium barber shop offering fades, beard trims, and luxury grooming services. Book your appointment today.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal trainer section</title>
+
+    <!-- Google Fonts for premium look -->
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind config for gold color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+               neon: '#39ff14'
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* Apply premium fonts */
+      h1, h2 {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+      }
+      body, p, a, button {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+
+</head>
+
+<body class="bg-black text-white min-h-screen">
+
+<!-- Nav Bar + Hero Section  -->
+<section class="relative h-screen bg-cover bg-center" style="background-image: url('Iron Obsidian V2.jpg');">
+<!-- Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+  <!-- Navbar -->
+
+<nav class="absolute top-0 left-0 w-full z-20">
+  <div class="w-full mx-auto px-16 py-5 flex items-center justify-between ">
+    <h1 class="text-3xl font-bold tracking-wide text-white">TRAINER<span class="text-neon">PRO</span></h1>
+    <ul class="hidden md:flex space-x-8 text-2xl font-medium">
+      <li><a href="index.html" class="hover:text-neon transition">Home</a></li>
+      <li><a href="services.html" class="hover:text-neon transition">Services</a></li>
+      <li><a href="gallery.html" class="hover:text-neon transition">Gallery</a></li>
+      <li><a href="pricing.html" class="hover:text-neon transition">Pricing</a></li>
+      <li><a href="contact.html" class="hover:text-neon transition">Contact</a></li>
+    </ul>
+    <button class="md:hidden text-white text-3xl">&#9776;</button>
+  </div>
+</nav>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
+    <h2 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight drop-shadow-[0_0_10px_grey]">
+      Build your peak physique
+    </h2>
+
+    <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl">
+      Achieve your goals with elite 1-to-1 Coaching, tailored Meal Plans, Online Coaching, and high-intensity Strength Training.
+    </p>
+
+    <button class="mt-8 px-8 py-4 bg-neon text-black font-semibold text-lg rounded-lg shadow-lg hover:bg-[#5fff3a] hover:shadow-[0_0_20px_#39ff14] transition">
+  Start your journey
+    </button>
+
+  </div>
+
+</section>
+</body>
+</html>
